@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="es">
+ 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="indexLoggedStyle.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300;500;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500;900&display=swap"
+    />
+
+    <link
+      rel="icon"
+      href="./img/logoNuevo.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- esto capaz hay que sacarlo despues porque es la importacion del script de bootstrap y es un js y para la parte 1 no va-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <title>TrabajoUY</title>
+  </head>
+  <body>
+    <header>
+      <!-- donde dice/buscar es la direccion donde va a llevar, y variable q es la que almacena la busqueda -->
+      <!-- esto se debe implementar mas adelante  
+            
+                <img class = "logotipo-trabajouy" src="logotipoTrabajoUy-transformed.png" alt="Logotipo de Mi Sitio">
+            
+            
+            -->
+
+	<nav class="navbar bg-dark px-5">
+    	<a class="navbar-brand" href="index.html">
+      		<img src="./img/logoNuevo.png"
+      		alt="Logo" 
+      		width="42" 
+      		height="44">
+    	</a>
+          
+          <div class = button-grup>
+  	        <li class="nav-item dropdown">
+            	<a
+              	class="nav-link dropdown-toggle"
+              	href="#"
+              	role="button"
+              	data-bs-toggle="dropdown"
+              	aria-expanded="false"
+              	style="color: white"
+            	>Usuarios
+
+            </a>
+              <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="consultaDeUsuario.html">Perfiles</a></li>
+              
+            </ul>
+          </li>
+          </div>
+          
+          <div class = button-grup>
+  	        <li class="nav-item dropdown">
+            	<a
+              	class="nav-link dropdown-toggle"
+              	href="#"
+              	role="button"
+              	data-bs-toggle="dropdown"
+              	aria-expanded="false"
+              	style="color: white"
+            	>Ofertas Laborales
+
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="altaDeOfertaLaboral.html">Crear Oferta Laboral</a></li>
+              <li><a class="dropdown-item" href="consultaDeOfertasLaborales.html">Ver Ofertas</a></li>
+              <li><a class="dropdown-item" href="consultaDeTiposDePublicacionDeOfertasLaborales.html">Tipos de Publicaciones</a></li>
+            </ul>
+          </li>
+          </div>
+          
+          <div class = button-grup>
+  	        <li class="nav-item dropdown" >
+            	<a
+              	class="nav-link dropdown-toggle"
+              	href="#"
+              	role="button"
+              	data-bs-toggle="dropdown"
+              	aria-expanded="false"
+              	style="color: white"
+            	>Paquetes
+
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="compraDePaqueteDeTiposDePubliDeOfertaLab.html">Ver Paquetes</a></li>
+            </ul>
+          </li>
+          </div>
+  	
+  		<div class = button-grup>
+  			<form class="d-flex" role="search">
+      		<input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+    		<button class="btn btn-secondary" type="submit">Buscar</button>
+    		width: 200px;
+    		</form>
+  		</div>
+  		
+  		<div class="ml-auto mt-auto dropdown"> <!-- Alinea a la derecha -->
+        <div class="nav-button"> <!-- Contenedor del botón -->
+            <a href="#" class="nav-link" data-bs-toggle="dropdown" style="color: white;">
+                <img src="https://imgv3.fotor.com/images/gallery/a-woman-linkedin-picture-with-grey-background-made-by-LinkedIn-Profile-Picture-Maker.jpg" alt="Botón" width="30" height="30" style="border-radius: 50%; margin-right: 10px;">
+                Mi Usuario
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="consultaPostulante.html">Usuario</a></li>
+                <li><a class="dropdown-item" href="modificarDatosDeUsuario.html">Modificar Usuario</a></li>
+                <!--<li><a class="dropdown-item cerrar-sesion" href="index.html">Cerrar sesión</a></li>-->
+                <!-- no se si meter ese js-->
+                <li><a class="dropdown-item cerrar-sesion" href="javascript:void(0);" onclick="confirmarCerrarSesion();">Cerrar sesión</a></li>
+            </ul>
+        </div>
+    </div>
+  		
+	</nav>
+
+
+      <div class="header-ola">
+        <!--Content before waves-->
+        <div
+          class="inner-header d-flex justify-content-center align-items-center flex-column"
+        >
+          <h1 class="trabajo-uy">Postular a una Oferta Laboral</h1>
+        </div>
+
+        <!--Waves Container-->
+        <div>
+          <svg
+            class="waves"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28"
+            preserveAspectRatio="none"
+            shape-rendering="auto"
+          >
+            <defs>
+              <path
+                id="gentle-wave"
+                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+              />
+            </defs>
+            <g class="parallax">
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="0"
+                fill="rgba(255,255,255,0.7"
+              />
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="3"
+                fill="rgba(255,255,255,0.5)"
+              />
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="5"
+                fill="rgba(255,255,255,0.3)"
+              />
+              <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+          </svg>
+        </div>
+        <!--Waves end-->
+      </div>
+      <!--Header ends-->
+
+      <!--Content starts-->
+
+      <!--Content ends-->
+    </header>
+    
+    
+    
+				    <main>
+			    <div class="contenedor4">
+			        <div class="row justify-content-center">
+			            <div class="col-6 col-md-4">
+			                <div class="alinearImg3">
+			                    <img src="https://tinyurl.com/4n2vpurk" class="img-thumbnail shadow" alt="...">
+			                </div>
+			            </div>
+			            <div class="col-md-8">
+			                <div class="contenedor4">
+			                    <h2 class="text-uppercase fs-4 fw-bolder">Información de la oferta</h2>
+			                </div>
+			                <!-- Cargar datos -->
+			                <div class="contenedor4">
+			                    <div class="row">
+			                        <div class="col">
+			                            <h4 class="fs-5 fw-normal">- Nombre:</h4>
+			                        </div>
+			                        <div class="col">
+			                            <h4 class="fs-5 fw-lighter">A. de Marketing Digital</h4>
+			                        </div>
+			                    </div>
+			                    <hr>
+			                    <div class="row">
+			                        <div class="col">
+			                            <h4 class="fs-5 fw-normal">- Descripción:</h4>
+			                        </div>
+			                        <div class="col">
+			                            <h4 class="fs-5 fw-lighter">Únete a nuestro equipo de marketing y trabaja en estrategias digitales innovadoras.</h4>
+			                        </div>
+			                    </div>
+			                    <hr>
+			                    <div class="row">
+			                        <div class="col">
+			                            <h4 class="fs-5 fw-normal">- Ciudad:</h4>
+			                        </div>
+			                        <div class="col">
+			                            <h4 class="fs-5 fw-lighter">Flores</h4>
+			                        </div>
+			                    </div>
+			                    <hr>
+			                    <div class="row">
+			                        <div class="col">
+			                            <h4 class="fs-5 fw-normal">- Departamento:</h4>
+			                        </div>
+			                        <div class="col">
+			                            <h4 class="fs-5 fw-lighter">Flores</h4>
+			                        </div>
+			                    </div>
+			                    <hr>
+			                    <div class="row">
+			                        <div class="col">
+			                            <h4 class="fs-5 fw-normal">- Horario:</h4>
+			                        </div>
+			                        <div class="col">
+			                            <h4 class="fs-5 fw-lighter">10:00 - 19:00</h4>
+			                        </div>
+			                    </div>
+			                    <hr>
+			                    <div class="row">
+			                        <div class="col">
+			                            <h4 class="fs-5 fw-normal">- Remuneración:</h4>
+			                        </div>
+			                        <div class="col">
+			                            <h4 class="fs-5 fw-lighter">$80000</h4>
+			                        </div>
+			                    </div>
+			                    <hr>
+			                    <div class="row">
+			                        <div class="col">
+			                            <h4 class="fs-5 fw-normal">- Fecha:</h4>
+			                        </div>
+			                        <div class="col">
+			                            <h4 class="fs-5 fw-lighter">15/08/2023</h4>
+			                        </div>
+			                    </div>
+			                    <hr>
+			                    <div class="row">
+			                        <div class="col">
+			                            <h4 class="fs-5 fw-normal">- Estado:</h4>
+			                        </div>
+			                        <div class="col">
+			                            <h4 class="fs-5 fw-lighter">Activa</h4>
+			                        </div>
+			                    </div>
+			                    <hr>
+			                    <div class="row">
+			                        <div class="col">
+			                            <h4 class="fs-5 fw-normal">- Empresa:</h4>
+			                        </div>
+			                        <div class="col">
+			                            <a href="#">
+			                                <button type="button" class="btn btn-outline-secondary">EcoTech</button>
+			                            </a>
+			                        </div>
+			                    </div>
+			                    <hr>
+			                </div>
+			
+			                
+			            </div>
+			        </div>
+			    </div>
+				
+				<div class="contenedor4">
+			    <div class="row justify-content-center">
+			        <div class="col-md-6">
+			            <div class="form-container justify-content-center">
+			                
+			                <div class="contenedorPrincipal">
+			                    <div class="container">
+			                        <h5 class="text-uppercase fs-5 fw-bolder">KeyWords Asociadas</h5>
+			                        <div class="container">
+			                            <a href="#">
+			                                <button type="button" class="btn btn-outline-dark">Tiempo completo</button>
+			                            </a>
+			                            <a href="#">
+			                                <button type="button" class="btn btn-outline-secondary">Medio tiempo</button>
+			                            </a>
+			                            <a href="#">
+			                                <button type="button" class="btn btn-outline-secondary">Remoto</button>
+			                            </a>
+			                            <a href="#">
+			                                <button type="button" class="btn btn-outline-secondary">Freelance</button>
+			                            </a>
+			                            <a href="#">
+			                                <button type="button" class="btn btn-outline-secondary">Temporal</button>
+			                            </a>
+			                            <a href="#">
+			                                <button type="button" class="btn btn-outline-secondary">Permanente</button>
+			                            </a>
+			                        </div>
+			                    </div>
+			                </div>
+			                <div class="my-5"></div>
+			                <div class="contenedor">
+			                    <h2 class="-titulo-"><strong>Ingrese Los Datos</strong></h2>
+			                    <div class="my-5"></div>
+			                </div>
+			                <div class="my-5"></div>
+			                <div class="text-center"><i class="fa-solid fa-circle-info"></i></div>
+			                <div class="my-5"></div>
+			
+			                <form>
+			                    <div class="form-floating mb-3">
+			                        <input type="text" class="form-control" id="floatingInput" placeholder="">
+			                        <label for="floatingInput">Motivación de la Postulación</label>
+			                    </div>
+			
+			                    <div class="form-floating">
+			                        <textarea class="form-control" placeholder="" id="floatingTextarea" style="height: 250px"></textarea>
+			                        <label for="floatingTextarea">Escriba un CV breve</label>
+			                    </div>
+			
+			                    <div class="my-5"></div>
+			
+			                    <div class="container text-center">
+			                        <button type="submit" class="btn btn-dark">POSTULARME</button>
+			                    </div>
+			                </form>
+			            </div>
+			        </div>
+			    </div>
+			   </div>
+			</main>
+	    
+    
+    
+    
+    
+    
+    <!--Footer-->
+       <footer class="bs-light text-dark pt-5">
+		   <div class="contenedor5 text-center text-md-start">
+			   <div class ="row text-center text-md-start">
+	  
+				   <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+					   <h5 class="text-uppercase mb-4 font-weight-bold text-dark">Nosotros</h5>
+					   <hr class="mb-3">
+					  <p> 
+       				  Desde nuestra creación en 2023, hemos sido una plataforma dedicada a facilitar la conexión entre empresas y postulantes en busca de oportunidades laborales emocionantes. Ya seas una empresa en busca de un talento o un postulante en búsqueda de tu próximo desafío, estamos aquí para ayudarte a alcanzar tus metas.
+    				  </p>
+    				 <p>
+        			Nuestra misión es servir como el puente que une a empleadores y futuros empleados, ayudando a construir equipos exitosos y carreras sólidas. ¡Únete a nuestra comunidad y da el siguiente paso en tu camino profesional!
+    				</p>
+					</div>
+					   
+					   <div class = "col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+							<h5 class="text-uppercase mb-4 font-weight-bold text-dark">Déjanos ayudarte</h5> 
+							<hr class="mb-3">
+							<p>
+								<a href="inicioDeSesion.html" class="text-dark">Tu cuenta</a>
+							</p>
+							<p>
+								<a href="consultaDeOfertasLaborales.html" class="text-dark">Ofertas</a>
+							</p>
+							<p>
+								<a href="consultaDeTiposDePublicacionDeOfertasLaborales.html" class="text-dark">Tipos de publicación</a>
+							</p>
+							<p>
+								<a href="#" class="text-dark">Ayuda</a>
+							</p>
+					   </div>
+					   
+					    <div class = "col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+							<h5 class="text-uppercase mb-4 font-weight-bold text-dark">Contacto</h5> 
+							<hr class="mb-3">
+							<p>
+								<li class="fas fa-map me-3"></li>Av. Julio Herrera y Reissig 565
+							</p>
+							<p>
+								<li class="fas fa-envelope me-3"></li>trabajouy@jobs.com
+							</p>
+							<p>
+								<li class="fas fa-phone me-3"></li>2714 2714
+							</p>
+							<p>
+								<li class="fas fa-university me-3"></li>FING
+							</p>
+					   </div>
+					   
+					   <div class = "col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+						<h5 class="text-uppercase mb-4 font-weight-bold text-dark">Newsletter</h5> 
+						<hr class="mb-3">
+						
+						<form action="">
+                        	<div class="form-group">
+                            	<input type="email" class="form-control" placeholder="Email"
+                                 required="required"/>
+                        	</div>
+                        	<div>
+                            	<button class="btn btn-outline-dark" type="submit">Suscribirme</button>
+                        	</div>
+                    	</form>
+					   </div>
+					   
+				
+					   
+					<div class="text-center mb-2">
+					<p>	
+						© 2023 FRAGSESAMA & Cía. S.A.
+					</p>
+					<p>
+						Todos los derechos reservados.
+					</p>
+					</div>
+					
+					<div class="text-center">
+						<ul class="list-unstyled list-inline">
+							<li class="list-inline-item">
+								<a href="#" class="text-dark"><i class = "fab fa-facebook"></i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#" class="text-dark"><i class = "fab fa-twitter"></i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#" class="text-dark"><i class = "fab fa-google-plus"></i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#" class="text-dark"><i class = "fab fa-linkedin-in"></i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#" class="text-dark"><i class = "fab fa-youtube"></i>
+								</a>
+							</li>
+						</ul>
+				    </div>
+				    
+        		</div>
+        	</div>
+ 
+	</footer>
+       
+       
+       
+  </body>
+</html>
